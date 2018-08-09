@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Power (P-FGM)</title>
+<link href="css/bootstrap-4.0.0.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+	
+<center><h1 class="display-4">Power FGM Properties Calculator</h1></center>
+	
+<form>
+		<div class="form-group">
+			<label for="exampleFormControlSelect1">Select the Layer Number:</label>
+			<select class="form-control" id="layer" required>
+				  <option selected>Select Layer</option>
+				  <option>Layer 1</option>
+				  <option>Layer 2</option>
+				  <option>Layer 3</option>
+				  <option>Layer 4</option>
+				  <option>Layer 5</option>
+				  <option>Layer 6</option>
+				  <option>Layer 7</option>
+				  <option>Layer 8</option>
+				  <option>Layer 9</option>
+				  <option>Layer 10</option>
+				  <option>Layer 11</option>
+				</select>
+				<small id="emailHelp1" class="form-text text-muted">Layer 1 - Bottom &amp; Layer 11 - Top</small>
+    </div>
+			<div class="form-group">
+				<label for="wvalue">Value of 'w'</label>
+				<input type="number" class="form-control" id="wvalue" placeholder="Value of 'w'" required>
+			</div>
+			<div class="form-group">
+				<label for="exampleFormControlSelect1">Select the property to Calculate:</label>
+				<select class="form-control" id="myselect" onchange="myFunction()" required>
+				  <option selected>Select Property</option>
+				  <option>Density</option>
+				  <option>Specific Heat</option>
+				  <option>Thermal Conductivity</option>
+				  <option>Young's Modulus</option>
+				  <option>Poisson's Ratio</option>
+				  <option>Tensile Ultimate Strength</option>
+				  <option>Tensile Yield Strength</option>
+				  <option>Compressive Yield Strength</option>
+				  <option>Thermal Expansion</option>
+				</select>
+		  </div>
+			<div class="form-group">
+				<label for="element1" id="change1">Enter the value of E1 (Copper)</label>
+				<input type="number" class="form-control" id="element1" placeholder="Element1 Property" required>
+				<small id="emailHelp1" class="form-text text-muted">E1 - 100% at the top</small> </div>
+			<div class="form-group">
+				<label for="element2" id="change2">Enter the value of E2 (Ceramic)</label>
+				<input type="number" class="form-control" id="element2" placeholder="Element2 Property" required>
+				<small id="emailHelp1" class="form-text text-muted">E2 - 100% at the bottom</small> </div>
+		
+		<div class="form-group">
+			<label for="result" id="result"></label>
+			<input type="number" class="form-control" id="out" placeholder="Click on Submit" disabled>
+	</div>
+</form>
+	<center><button class="btn btn-primary" onClick="calculate()">Submit</button></center>
+	
+	
+<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
